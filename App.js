@@ -6,7 +6,7 @@ export default function App() {
         <View>
             <ImageBackground source={require("./assets/main/22.jpg")} style={styles.bg}>
                 <Text style={styles.startButton}>새게임</Text>
-                <Text style={styles.startButton}>저장된 게임s</Text>
+                <Text style={styles.startButton}>저장된 게임</Text>
             </ImageBackground>
         </View >
     );
