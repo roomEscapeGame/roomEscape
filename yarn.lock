@@ -4404,6 +4404,14 @@ expo-modules-core@1.1.1:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
+expo-navigation-bar@~2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/expo-navigation-bar/-/expo-navigation-bar-2.0.1.tgz#86597f89c0549d9b495829d0c29cd91186f6222e"
+  integrity sha512-lR+77eOJ4unrDVtrOHRK95c2QGsbRlYt2PmAST9Y+AFEiqVsYWg2JZTp2f2XZxe/10i8jqgSHBMRm7I7w2DcBA==
+  dependencies:
+    "@react-native/normalize-color" "^2.0.0"
+    debug "^4.3.2"
+
 expo-pwa@0.0.123:
   version "0.0.123"
   resolved "https://registry.yarnpkg.com/expo-pwa/-/expo-pwa-0.0.123.tgz#06c3b6293d36b7e35a08f814172fcd3a139cc950"
@@ -4413,6 +4421,11 @@ expo-pwa@0.0.123:
     chalk "^4.0.0"
     commander "2.20.0"
     update-check "1.5.3"
+
+expo-screen-orientation@~5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/expo-screen-orientation/-/expo-screen-orientation-5.0.1.tgz#b2372d69ea968f04b5f5e7104cdc1c9544a07847"
+  integrity sha512-/EytlprTKrGny1XYvku+UaGgsEPqtAU7Q8fCt9QtszqCj4hhQoEEa7/LJ4Bds5LNDdyd/syh0dkkJ3YtSI6h1Q==
 
 expo-status-bar@~1.4.2:
   version "1.4.2"
