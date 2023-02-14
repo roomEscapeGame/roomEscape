@@ -15,7 +15,7 @@ export default function App() {
     return (
         <View>
             <StatusBar hidden />
-            <ImageBackground source={require("./assets/splash.png")} style={styles.bg}>
+            <ImageBackground source={require("./assets/main/22.jpg")} style={styles.bg}>
                 <Text style={styles.startButton}>새게임</Text>
                 <Text style={styles.startButton}>저장된 게임</Text>
             </ImageBackground>
