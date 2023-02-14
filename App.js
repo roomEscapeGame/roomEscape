@@ -1,45 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
-import * as ScreenOrientation from 'expo-screen-orientation';
-import * as NavigationBar from 'expo-navigation-bar';
-import { useEffect } from 'react';
+import { Image, ImageBackground, StyleSheet, Text, View, Button } from 'react-native';
+import "react-native-gesture-handler";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from "@react-navigation/stack";
+import * as React from 'react';
+import Prologue from './pages/prologue'
+
+const Stack = createStackNavigator();
 
 export default function App() {
-    async function changeScreenOrientation() {
-        await ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
-    }
-    useEffect(() => {
-        changeScreenOrientation();
-        NavigationBar.setVisibilityAsync("hidden");
-    }, [])
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="New">
+            <Stack.Screen name="New" component={Prologue} />
+            {/* <Stack.Screen name="Continue" component={DetailsScreen} /> */}
+        </Stack.Navigator>
+    </NavigationContainer>
+
     return (
         <View>
-            <StatusBar hidden />
-            <ImageBackground source={require("./assets/main/22.jpg")} style={styles.bg}>
-                <Text style={styles.startButton}>새게임</Text>
-                <Text style={styles.startButton}>저장된 게임</Text>
-            </ImageBackground>
-        </View >
+            <Text>Start!</Text>
+        </View>
     );
 }
 
-const styles = StyleSheet.create({
-    bg: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: "100%",
-        height: "100%",
-    },
-    startButton: {
-        backgroundColor: '#00000077',
-        width: '80%',
-        textAlign: 'center',
-        lineHeight: 70,
-        marginTop: 5,
-        marginBottom: 5,
-        color: '#fff',
-        fontSize: 24,
-    }
-})
