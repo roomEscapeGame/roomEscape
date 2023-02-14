@@ -32,9 +32,9 @@ export default function App() {
     return (
         <View style={{ backgroundColor: "#000" }}>
             <StatusBar hidden />
-            <ImageBackground source={require("./assets/splash.png")} style={[styles.bg, zflipWidth]}>
-                <Text style={styles.startButton}>새게임</Text>
-                <Text style={styles.startButton}>저장된 게임</Text>
+            <ImageBackground source={require("./assets/main/22.jpg")} style={[styles.bg, zflipWidth]}>
+                <Text style={styles.startButton}>New</Text>
+                <Text style={styles.startButton}>Continue</Text>
             </ImageBackground>
         </View >
     );
